@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto !importants;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+  background-color: white;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0;
+  border: 0;
+
+  /* overflow: hidden; */
+  /* position: relative; */
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: none;
+  font-color: #00000;
+}
+a:link {
+  color: yellowgreen;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: #f3e8eb;
+}
+a:active {
+  color: pink;
+}
