@@ -1,0 +1,174 @@
+@import url(".styled.css");
+
+.section5 {
+  width: 100%;
+  height: 100vh;
+}
+.section5-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+.news-left-contents {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid black;
+  background-color: #f2f3f5;
+  width: 50%;
+  height: 50vh;
+}
+.news-title {
+  font-size: 20px;
+  margin: 40px;
+}
+.section5 .news-img {
+  font-size: 24px;
+  padding: 20px;
+}
+.news-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.newsButton {
+  display: flex;
+  justify-content: space-between;
+  align-center: center;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+/* 5 */
+.btn-5 {
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-5:hover {
+  background: transparent;
+  color: #000;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+}
+.btn-5:before,
+.btn-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: 400ms ease all;
+}
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+/* 6 */
+.btn-6 {
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 2px;
+  background: #000;
+}
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.btn-6:hover {
+  color: #000;
+  background: transparent;
+}
+.btn-6:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  background: #000;
+}
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+  width: 100%;
+}
+.btn-6 span:hover:after {
+  width: 100%;
+}
+.news-right-contents {
+  background-color: #f2f3f5;
+  width: 50%;
+  height: 50vh;
+}
+.right-wrapper {
+  text-align: center;
+  padding: 50px;
+  margin: 0 -10px; /* 요소들 사이의 간격을 조절합니다. 음수 값으로 왼쪽과 오른쪽에도 간격을 설정합니다. */
+}
+
+.right-wrapper .news {
+  margin: 0 10px; /* 각 요소의 간격을 조절합니다. */
+}
