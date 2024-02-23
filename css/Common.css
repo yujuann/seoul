@@ -6,7 +6,10 @@ body {
   font-family: "Helvetica Neue";
   background-color: white;
 }
-
+[class*="inner"] {
+  width: 1200px;
+  margin: auto;
+}
 .wrapper {
   width: 100%;
   padding: 0;
@@ -30,7 +33,7 @@ a {
   line-height: none;
   font-color: #00000;
 }
-a:link {
+/* a:link {
   color: yellowgreen;
 }
 a:visited {
@@ -41,4 +44,4 @@ a:hover {
 }
 a:active {
   color: pink;
-}
+} */

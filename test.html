@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- filter.js  -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <style>
+      [class*="inner"] {
+        border: 1px solid black;
+        width: 1200px;
+        margin: auto !important;
+      }
+      .btns {
+        display: flex;
+      }
+      input[type="radio"] {
+        display: none;
+      }
+      input[id="tab1"]:checked ~ .btns label[for="tab1"],
+      input[id="tab2"]:checked ~ .btns label[for="tab2"],
+      input[id="tab3"]:checked ~ .btns label[for="tab3"] {
+        color: red;
+      }
+      .page {
+        display: none;
+      }
+      input[id="tab1"]:checked ~ .pageBox .page1,
+      input[id="tab2"]:checked ~ .pageBox .page2,
+      input[id="tab3"]:checked ~ .pageBox .page3 {
+        display: block;
+      }
+      /* input[id="tab2"]:checked ~ .btns label[for="tab2"],
+      input[id="tab3"]:checked ~ .btns label[for="tab3"] {
+      } */
+    </style>
+  </head>
+  <body>
+    <input type="radio" id="tab1" name="tab" checked />
+    <input type="radio" id="tab2" name="tab" />
+    <input type="radio" id="tab3" name="tab" />
+    <div class="btns">
+      <label for="tab1">1</label>
+      <label for="tab2">3</label>
+      <label for="tab3">2</label>
+    </div>
+    <div class="pageBox">
+      <div class="page page1">1</div>
+      <div class="page page2">2</div>
+      <div class="page page3">3</div>
+    </div>
+  </body>
+</html>

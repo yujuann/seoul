@@ -66,5 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+function scrollToFooter() {
+  const footer = document.querySelector("footer");
+  footer.scrollIntoView({ behavior: "smooth" });
+}
 
 AOS.init();

@@ -1,15 +1,48 @@
 @import url(.styled.css);
+/* 
+* {
+  marginl: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Airal, "Helvetica Neue", Helvetica, Arial;
+} */
 
-.footer-wrapper {
-  background: #232323;
-  /* width: 100%; */
+footer {
   width: 100%;
-  height: 40vh;
-  /* margin-top: 40px; */
-  border: 2px solid black;
+  margin: 0 auto;
+  height: 20vh;
+  background-color: #212329;
+  text-decoration: none;
+  overflow: hidden;
+}
+.first-wrapper {
+  padding-top: 15px;
 }
 
-.box1 {
-  height: 50px;
-  border: 1px solid black;
+.first-wrapper a {
+  text-decoration: none;
+  color: black;
+  margin: 10px 20px;
+  display: inline-block;
+  color: white;
+}
+.footer-second {
+  padding-top: 10px;
+  display: flex;
+}
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-alink {
+  display: flex;
+  justify-content: center;
+}
+.footer-second a {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  color: white;
+  display: inline-block;
+  padding-left: 30px;
 }

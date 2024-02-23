@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(css/reset.css);
+      #wrap {
+        width: 600px;
+        margin: 100px auto;
+        text-align: center;
+      }
+      .tabtitle {
+        display: flex;
+      }
+      .tabtitle a {
+        width: 200px;
+        height: 100px;
+        font-size: 40px;
+        line-height: 100px;
+        color: #666;
+        background: url(img/mario/pipe-white.png) no-repeat;
+      }
+      .tabtitle a.on {
+        background: url(img/mario/pipe.png) no-repeat;
+      }
+      .tabcontainer {
+        position: relative;
+      }
+      .tabImg {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        display: none;
+      }
+      .tabImg.on {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="tabtitle">
+        <a href="#" class="on" data-num="0">Mario</a>
+        <a href="#" data-num="1">Luigi</a>
+        <a href="#" data-num="2">Toad</a>
+      </div>
+      <div class="tabcontainer">
+        <div class="tabImg on"><img src="img/a-3.jpeg" alt="" /></div>
+        <div class="tabImg"><img src="img/a-4.jpeg" alt="" /></div>
+        <div class="tabImg"><img src="img/a-5.jpeg" alt="" /></div>
+      </div>
+    </div>
+    <script>
+      const title = document.querySelector(".tabtitle");
+      const titleList = document.querySelectorAll(".tabtitle>a");
+      const tabImg = document.querySelectorAll(".tabImg");
+      //이벤트
+      title.addEventListener("click", (e) => {
+        let selectList = e.target;
+        let datatNum = selectList.dataset.num;
+        titleFnc(selectList); // 현재 클릭 된 요소가 매개변수로 전달된다.
+        contentFnc(datatNum); // 현재 클릭 된 요소의 data-num 값이 매개변수로 전달된다.
+      });
+
+      //제목 함수
+      function titleFnc(selectList) {
+        titleList.forEach((ele) => {
+          ele.classList.remove("on");
+        });
+        selectList.classList.add("on");
+      }
+      //내용 함수
+      function contentFnc(datatNum) {
+        tabImg.forEach((ele) => {
+          ele.classList.remove("on");
+        });
+        tabImg[datatNum].classList.add("on");
+      }
+    </script>
+  </body>
+</html>
