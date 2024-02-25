@@ -72,3 +72,21 @@ function scrollToFooter() {
 }
 
 AOS.init();
+
+// tab const even click functions
+document.addEventListener("DOMContentLoaded", function () {
+  const tabWrappers = document.querySelectorAll(".box-wrap");
+  tabWrappers[0].classList.add("on");
+});
+
+function showTab(tabIndex, event) {
+  const tabWrappers = document.querySelectorAll(".box-wrap");
+  tabWrappers.forEach((tab, index) => {
+    if (index === tabIndex) {
+      tab.classList.add("on");
+    } else {
+      tab.classList.remove("on");
+    }
+  });
+  event.preventDefault();
+}

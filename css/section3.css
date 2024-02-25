@@ -1,0 +1,177 @@
+/* 서울 행사 이벤트 - 구독하기 -푸터 */
+.section4 {
+  width: 100%;
+  height: 90vh;
+}
+.section4-inner {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden; /* 또는 overflow: scroll; */
+}
+.newsTitle {
+  margin: 30px 20px;
+  font-weight: bold;
+  font-size: 27px;
+}
+.tabtitle {
+  display: flex;
+  margin-left: 265px;
+  width: 600px;
+  text-align: center;
+}
+
+.tabtitle a {
+  width: 80px;
+  font-size: 20px;
+  line-height: 70px;
+  padding: 0;
+  margin: 0;
+  color: #666;
+  text-decoration: none;
+}
+.tabtitle a:hover {
+  color: orange;
+  font-weight: bold;
+}
+.tabcontainer {
+  position: relative;
+}
+.tabImg {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  height: 43vh;
+  display: none;
+  align-items: center;
+}
+.tabImg.on {
+  display: block;
+}
+.tabcontainer {
+  height: 40vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.box-wrap {
+  display: none;
+  width: 70%;
+  /* margin-bottom: 30px; */
+  margin-left: 220px;
+}
+.box-wrap.on {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.box,
+.box1 {
+  width: 250px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.news-title {
+  color: orange;
+  padding-top: 3px;
+  text-align: right;
+}
+.box-img {
+  padding-bottom: 10px;
+}
+.box-img img {
+  width: 260px;
+  height: 150px;
+  border-radius: 10px;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+.box:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.text {
+  padding-top: 13px;
+  margin: 0 13px;
+  text-align: left;
+}
+.news-date {
+  text-align: right;
+}
+
+.add {
+  padding-top: 220px;
+}
+
+.add a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.add a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+/* sub.css */
+.sub-wrapper {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.right-wrapper {
+  display: flex;
+  margin: 30px;
+}
+
+.news img {
+  width: 320px;
+  height: 88px;
+}
+/* footer css */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 20vh;
+  background-color: #212329;
+  text-decoration: none;
+  overflow: hidden;
+}
+.first-wrapper {
+  padding-top: 15px;
+}
+
+.first-wrapper a {
+  text-decoration: none;
+  color: black;
+  margin: 10px 20px;
+  display: inline-block;
+  color: white;
+}
+.footer-second {
+  padding-top: 10px;
+  display: flex;
+}
+.footer-logo {
+  margin-right: 25px;
+}
+
+.footer-alink {
+  display: flex;
+  justify-content: center;
+}
+.footer-second a {
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  color: white;
+  display: inline-block;
+  padding-left: 30px;
+}
