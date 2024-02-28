@@ -20,7 +20,8 @@ searchInputEl.addEventListener("blur", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // Swiper 초기화 및 옵션 설정
   const mySwiper = new Swiper(".swiper-container", {
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 30,
     centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
@@ -35,6 +36,19 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: true,
     },
     loop: true,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    on: {
+      init() {
+        // ...
+      },
+    },
   });
 
   // 데스크톱에서 포커스가 빠진 경우 자동 슬라이드 재생

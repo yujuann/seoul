@@ -160,10 +160,11 @@
 }
 
 .mainbanner {
-  height: 500px;
+  height: 300px;
   margin-bottom: 29px;
 }
 .main {
+  height: 100%;
   /* width: 1200px; */
 }
 
@@ -193,6 +194,7 @@
   color: none;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .swiper {
@@ -206,8 +208,14 @@
   margin: 20px;
 }
 .swiper-slide img {
-  width: 500px;
-  padding-top: 30px;
+  width: 100%;
+}
+.swiper-wrapper {
+  margin-bottom: 60px;
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: auto !important;
+  bottom: 0px !important;
 }
 .swiper-pagination-bullet {
   width: 12px;
@@ -215,6 +223,8 @@
   background: transparent;
   border: 1px solid pink;
   opacity: 1;
+  top: auto !important;
+  bottom: 20px;
 }
 .swiper-pagination-bullet-active {
   width: 40px;
