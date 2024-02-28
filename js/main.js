@@ -20,7 +20,7 @@ searchInputEl.addEventListener("blur", function () {
 document.addEventListener("DOMContentLoaded", function () {
   // Swiper 초기화 및 옵션 설정
   const mySwiper = new Swiper(".swiper-container", {
-    spaceBetween: 30,
+    spaceBetween: 10,
     centeredSlides: true,
     pagination: {
       el: ".swiper-pagination",
@@ -90,3 +90,15 @@ function showTab(tabIndex, event) {
   });
   event.preventDefault();
 }
+
+//
+function addFooter(content) {
+  document.getElementById("footer").innerHTML = content;
+}
+
+// 다른 HTML 파일에서 푸터를 가져와서 현재 페이지에 추가
+fetch("index.html")
+  .then((response) => response.text())
+  .then((data) => {
+    addFooter(data);
+  });
